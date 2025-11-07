@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        jdk 'JDK17'
+        jdk 'JDK11'
         maven 'Maven3'
     }
     stages {
@@ -24,7 +24,7 @@ pipeline {
         stage('Test') {
             // write your logic here
             steps {
-                  'mvn test'
+                bat 'mvn test'
             }
         }
         stage('Post Build Notification') {
