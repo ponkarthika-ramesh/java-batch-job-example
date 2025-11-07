@@ -24,7 +24,7 @@ pipeline {
         stage('Test') {
             // write your logic here
             steps {
-                 bat 'mvn test2'
+                  'mvn test'
             }
         }
         stage('Post Build Notification') {
