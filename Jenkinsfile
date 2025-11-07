@@ -14,7 +14,7 @@ pipeline {
         stage('Build') {
             // write your logic here
             steps {
-                 bat 'mvn install'
+                 bat 'mvn clean install'
         }
         stage('Run Application') {
             // write your logic here
@@ -24,7 +24,7 @@ pipeline {
         stage('Test') {
             // write your logic here
             steps {
-                 bat 'mvn test'
+                 bat 'mvn test2'
             }
         }
         stage('Post Build Notification') {
